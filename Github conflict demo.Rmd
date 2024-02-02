@@ -32,7 +32,7 @@ library(mapview)
 ```
 
 ## Load data
-### George is here
+### George is not here
 Next we load our dataset from OpenDataPhilly.org. This dataset is a GeoJSON of all the parks in Philadelphia. We use sf::st_read() to read in spatial data like this.
 ```{r load data, include = FALSE}
 parks <- st_read("https://opendata.arcgis.com/datasets/d52445160ab14380a673e5849203eb64_0.geojson")
@@ -40,6 +40,7 @@ parks <- st_read("https://opendata.arcgis.com/datasets/d52445160ab14380a673e5849
 
 ## Preview data
 ## hi there 
+
 
 Let's preview our data. Using mapview::mapview(), we can quickly check what the data looks like. This is useful for when you are manipulating spatial data and need to check if things look right at each step.
 ```{r preview data}
